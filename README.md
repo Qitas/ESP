@@ -1,20 +1,57 @@
-﻿# ESP
-
-### 描述
-
-关于ESP芯片的相关工程文件
+# [Qitas](https://github.com/qitas/struct) 
 
 ---
 
-## 组成
+### 概况
 
-- 工程代码
-
-- 开发工具
-
+本项目实现 XXXX
 
 ---
 
-## 为锻造最美之器
+### 目录说明
 
-[![sites](qitas/qitas.png)](http://www.qitas.cn)
+- resources  : 项目用到的资源的源文件存档
+- programs   : 项目应用程序，每个子文件夹是一个独立的进程
+- depends    : 项目依赖的外部库（尽量用git submodule形式引入）
+- example    : 有重要参考意义的例子代码
+- scripts    : 编译过程中用到的一些脚本
+- system     : 与bootloader/system/rootfs相关的配置与代码
+- common     : 全部项目都有可能用到的公共头文件
+- output     : 生成的目标文件、库与配置数据（分不同平台）
+- utils      : 在主机上使用的工具类程序（例如格式转换工具）
+- docs       : 项目的相关文档（markdown）
+
+---
+
+### 详情说明
+
+- programs/appmain   : 主应用程序
+- programs/appxxx    : xxx program
+- depends/libsample  : sample库
+- README.md          : it's me!
+
+### 环境设立步骤
+
+- Please read docs/setup.md
+
+### 编译步骤
+```
+    ./make.all
+```
+
+### 编码规范
+
+- 待定
+
+---
+
+### GIT 使用规范
+
+- git commit should follow rules:
+ + [commit msg](http://karma-runner.github.io/0.12/dev/git-commit-msg.html)
+ + [git usage](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
+ + [branches(CN)](http://www.ruanyifeng.com/blog/2012/07/git.html)
+ + [branches(EN)](http://nvie.com/posts/a-successful-git-branching-model/)
+ + [merge](http://scottchacon.com/2011/08/31/github-flow.html)
+ + [merge](http://sandofsky.com/blog/git-workflow.html)
+

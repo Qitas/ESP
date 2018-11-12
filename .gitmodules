@@ -1,0 +1,12 @@
+[submodule "depends/libdaemon"]
+	path = depends/libdaemon
+	url = git://git.0pointer.de/libdaemon
+[submodule "examples/lv_examples"]
+	path = examples/lv_examples
+	url = https://github.com/littlevgl/lv_examples.git
+[submodule "depends/liblvgl/lvgl"]
+	path = depends/liblvgl/lvgl
+	url = https://github.com/littlevgl/lvgl.git
+[submodule "depends/liblvgl/lv_drivers"]
+	path = depends/liblvgl/lv_drivers
+	url = https://github.com/littlevgl/lv_drivers.git

@@ -1,0 +1,11 @@
+--- configure	2018-04-10 10:27:39.168392002 +0000
++++ configure	2018-04-10 10:28:15.668155399 +0000
+@@ -13,6 +13,8 @@
+ ## -------------------- ##
+ ## M4sh Initialization. ##
+ ## -------------------- ##
++ac_cv_func_getpgrp_void=no
++ac_cv_func_setpgrp_void=yes
+ 
+ # Be more Bourne compatible
+ DUALCASE=1; export DUALCASE # for MKS sh

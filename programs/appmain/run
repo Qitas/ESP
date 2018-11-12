@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z $PROJECT_ROOT ]; then
+    echo "please specify ROOT path of project by: export PROJECT_ROOT=\"...\""
+    exit -1
+fi
+
+export LD_LIBRARY_PATH=/usr/local/lib:$PROJECT_ROOT/output/x86/lib:$PROJECT_ROOT/output/x86/usr/lib
+# sudo chmod 777 /var/run
+# sudo chmod 777 /dev/input/event2
+
+valgrind --leak-check=full --track-origins=yes build/x86/src/appmain -t 0 -c

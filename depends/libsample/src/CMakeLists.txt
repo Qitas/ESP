@@ -1,0 +1,27 @@
+# 查找当前目录下的所有源文件 并将名称保存到 DIR_SRCS 变量
+aux_source_directory(. DIR_SRCS)
+
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../include)
+INCLUDE_DIRECTORIES(${GLOBAL_ROOT})
+
+# find_package(libdaemon REQUIRED)
+
+INCLUDE(FindPkgConfig)
+PKG_SEARCH_MODULE(DAEMON libdaemon)
+IF(DAEMON_FOUND)
+  INCLUDE_DIRECTORIES(${DAEMON_INCLUDE_DIRS})
+  LINK_DIRECTORIES(${DAEMON_LIBRARY_DIRS})
+ELSE()
+  MESSAGE(WARNING "libdaemon not found")
+ENDIF()
+
+# set (EXTRA_LIBS ${EXTRA_LIBS} )
+
+# 指定生成目标
+# add_executable(test ${DIR_SRCS})
+add_library(${PROJECT_NAME} SHARED ${DIR_SRCS})
+# target_link_libraries (${PROJECT_NAME} ${EXTRA_LIBS})
+
+# INSTALL
+INSTALL(TARGETS ${PROJECT_NAME} DESTINATION usr/lib)
+INSTALL(DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/../include/${PROJECT_NAME} DESTINATION usr/include)

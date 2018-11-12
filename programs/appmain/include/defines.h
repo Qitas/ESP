@@ -1,0 +1,6 @@
+#ifndef _APPMAIN_DEFINES_H
+#define _APPMAIN_DEFINES_H
+
+//...
+
+#endif //_APPMAIN_DEFINES_H
