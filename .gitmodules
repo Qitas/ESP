@@ -1,6 +1,0 @@
-[submodule "depends/libdaemon"]
-	path = depends/libdaemon
-	url = git://git.0pointer.de/libdaemon
-[submodule "examples/lv_examples"]
-	path = examples/lv_examples
-	url = https://github.com/qitas/lv_examples.git

@@ -37,13 +37,6 @@
  + [merge](http://scottchacon.com/2011/08/31/github-flow.html)
  + [merge](http://sandofsky.com/blog/git-workflow.html)
 
- ---
+[![sites](http://182.61.61.133/link/resources/head.png)](http://www.qitas.cn) 
 
 ## 锻造最美之器
-
-[![sites](qitas/qitas.png)](http://www.qitas.cn)
-
-
-## 为锻造最美之器
-
-[![sites](qitas/qitas.png)](http://www.qitas.cn)
