@@ -1,8 +1,8 @@
-# [structure](https://github.com/Qitas/structure) 
+# [template](https://github.com/Qitas/template) 
 
-### [概述](https://github.com/Qitas/structure/wiki) 
+### [概述](https://github.com/Qitas/template/wiki) 
 
-用于linux项目开发模板
+适用于linux项目的工程开发模板
 
 ### 目录
 
@@ -23,19 +23,6 @@
 - programs/appmain   : 主应用程序
 - programs/appxxx    : xxx program
 - depends/libsample  : sample库
-- README.md          : it's me!
-
-
-
-### GIT
-
-- git commit should follow rules:
- + [commit msg](http://karma-runner.github.io/0.12/dev/git-commit-msg.html)
- + [git usage](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
- + [branches(CN)](http://www.ruanyifeng.com/blog/2012/07/git.html)
- + [branches(EN)](http://nvie.com/posts/a-successful-git-branching-model/)
- + [merge](http://scottchacon.com/2011/08/31/github-flow.html)
- + [merge](http://sandofsky.com/blog/git-workflow.html)
 
 [![sites](http://182.61.61.133/link/resources/head.png)](http://www.qitas.cn) 
 
